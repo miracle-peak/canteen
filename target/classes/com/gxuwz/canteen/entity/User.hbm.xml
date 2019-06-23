@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-7 22:06:32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.gxuwz.canteen.entity.User" table="sys_user">
+        <id name="userId" type="int">
+            <column name="userId" />
+            <generator class="native" />
+        </id>
+        <property name="userName" type="java.lang.String">
+            <column name="userName" />
+        </property>
+        <property name="utype" type="java.lang.String">
+            <column name="utype" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+    </class>
+</hibernate-mapping>

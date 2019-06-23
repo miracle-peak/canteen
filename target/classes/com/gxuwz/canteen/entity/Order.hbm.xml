@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-8 17:55:49 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.gxuwz.canteen.entity.Order" table="sys_order">
+        <id name="orderId" type="int">
+            <column name="orderId" />
+            <generator class="native" />
+        </id>
+        <property name="mealName" type="java.lang.String">
+            <column name="mealName" />
+        </property>
+        <property name="orderNumber" type="java.lang.String">
+            <column name="orderNumber" />
+        </property>
+        <property name="orderTime" type="java.lang.String">
+            <column name="orderTime" />
+        </property>
+        <property name="workerId" type="java.lang.String">
+            <column name="workerId" />
+        </property>
+        <property name="mealId" type="int">
+            <column name="mealId" />
+        </property>
+        <property name="mealPrice" type="java.lang.String">
+            <column name="mealPrice" />
+        </property>
+        <property name="telephone" type="java.lang.String">
+            <column name="telephone" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+    </class>
+</hibernate-mapping>

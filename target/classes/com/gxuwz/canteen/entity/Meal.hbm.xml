@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-8 15:34:18 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.gxuwz.canteen.entity.Meal" table="sys_meal">
+        <id name="mealId" type="int">
+            <column name="mealId" />
+            <generator class="native" />
+        </id>
+        <property name="mealName" type="java.lang.String">
+            <column name="mealName" />
+        </property>
+        <property name="mealDescribe" type="java.lang.String">
+            <column name="mealDescribe" />
+        </property>
+        <property name="mealPrice" type="java.lang.String">
+            <column name="mealPrice" />
+        </property>
+    </class>
+</hibernate-mapping>

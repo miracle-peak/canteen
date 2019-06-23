@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-7 22:17:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.gxuwz.canteen.entity.Manager" table="sys_manager">
+        <id name="managerNo" type="java.lang.String">
+            <column name="managerNo" />
+            <generator class="native" />
+        </id>
+        <property name="managerName" type="java.lang.String">
+            <column name="managerName" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-7 22:27:35 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.gxuwz.canteen.entity.Worker" table="sys_worker">
+        <id name="workerId" type="java.lang.String">
+            <column name="workerId" />
+            <generator class="native" />
+        </id>
+        <property name="workerName" type="java.lang.String">
+            <column name="workerName" />
+        </property>
+        <property name="telephone" type="java.lang.String">
+            <column name="telephone" />
+        </property>
+    </class>
+</hibernate-mapping>

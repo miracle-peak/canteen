@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-10 10:52:19 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.gxuwz.canteen.entity.Accountant" table="sys_accountant">
+        <id name="accountantId" type="java.lang.String">
+            <column name="accountantId" />
+            <generator class="native" />
+        </id>
+        <property name="accountantName" type="java.lang.String">
+            <column name="accountantName" />
+        </property>
+    </class>
+</hibernate-mapping>
