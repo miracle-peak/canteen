@@ -1,16 +1,11 @@
 package com.gxuwz.canteen.dao;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.options;
 
-import java.util.ArrayList;
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
 import org.apache.struts2.ServletActionContext;
 import org.springframework.stereotype.Repository;
-
 import com.gxuwz.canteen.entity.Buyer;
 import com.gxuwz.canteen.entity.Purchase;
 import com.gxuwz.canteen.entity.User;

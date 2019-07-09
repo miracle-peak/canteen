@@ -1,13 +1,10 @@
 package com.gxuwz.canteen.action;
 
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
 import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import com.gxuwz.canteen.entity.Buyer;
 import com.gxuwz.canteen.entity.Purchase;
 import com.gxuwz.canteen.entity.User;
