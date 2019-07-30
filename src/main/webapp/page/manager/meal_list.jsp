@@ -60,66 +60,63 @@
 				var r = confirm("您确定要删除吗?");
 				if(r==true){
 					alert("删除成功");
-					return r;
-				}else{
-					return r;
-	
 				}
+					return r;
 			}
 		</script>
 		</form>
 		<script type="text/javascript">
-		var url = "Meal_findBypage.action";
-		var currentPage = ${result.currentPage};
-		var totalPage = ${result.totalPage};
-// 		上一页
-		function previousPage(){
-			console.log("上一页=="+currentPage);
-			if(currentPage > 1){
-		    	window.location.href  = url+"?pageNumber="+(currentPage-1);
+			var url = "Meal_findBypage.action";
+			var currentPage = ${result.currentPage};
+			var totalPage = ${result.totalPage};
+	// 		上一页
+			function previousPage(){
+				console.log("上一页=="+currentPage);
+				if(currentPage > 1){
+			    	window.location.href  = url+"?pageNumber="+(currentPage-1);
+				}
+				/* $.ajax({
+					url:url,
+					type:"post",
+					data:{
+						"pageNumber":(currentPage-1),
+					},
+					dataType:"JSON",
+					
+	
+					}); */
 			}
-			/* $.ajax({
-				url:url,
-				type:"post",
-				data:{
-					"pageNumber":(currentPage-1),
-				},
-				dataType:"JSON",
+			//首页
+			function first(){
+			   window.location.href  = url+"?pageNumber=1";
+			}
+			//下一页
+			function nextPage(){
+				console.log("上一页"+currentPage);
+				console.log("下一页"+totalPage);
+				if(currentPage < totalPage){
+					window.location.href  = url+"?pageNumber="+(currentPage+1);
+				}
+				/* $.ajax({
+					url:url,
+					type:"post",
+					data:{
+						"pageNumber":(currentPage+1),
+					},
+					dataType:"JSON",
+					
+	
+					}); */
+			}
+			//尾页
+			function lastPage(){
+				if(currentPage == totalPage){
+					return;
+				}else{
+					window.location.href  = url+"?pageNumber="+totalPage;
+				}
 				
-
-				}); */
-		}
-		//首页
-		function first(){
-		   window.location.href  = url+"?pageNumber=1";
-		}
-		//下一页
-		function nextPage(){
-			console.log("上一页"+currentPage);
-			console.log("下一页"+totalPage);
-			if(currentPage < totalPage){
-				window.location.href  = url+"?pageNumber="+(currentPage+1);
 			}
-			/* $.ajax({
-				url:url,
-				type:"post",
-				data:{
-					"pageNumber":(currentPage+1),
-				},
-				dataType:"JSON",
-				
-
-				}); */
-		}
-		//尾页
-		function lastPage(){
-			if(currentPage == totalPage){
-				return;
-			}else{
-				window.location.href  = url+"?pageNumber="+totalPage;
-			}
-			
-		}
 
 	</script>
 	</body>
